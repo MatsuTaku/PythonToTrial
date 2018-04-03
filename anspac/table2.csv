@@ -1,0 +1,6 @@
+['The', 'Zen', 'of', 'Python，', 'by', 'Tim', 'Peters'] -> The Zen of Python， by Tim Peters
+['Beautiful', 'is', 'better', 'than', 'ugly.'] -> Beautiful is better than ugly.
+['Explicit', 'is', 'better', 'than', 'implicit.'] -> Explicit is better than implicit.
+['Simple', 'is', 'better', 'than', 'complex.'] -> Simple is better than complex.
+['Flat', 'is', 'better', 'than', 'dense.'] -> Flat is better than dense.
+['Readability', 'counts.'] -> Readability counts.

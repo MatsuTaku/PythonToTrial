@@ -1,0 +1,6 @@
+[{'Romeo': 'Juliet'}, {'Juliet': 'Romeo'}]
+[{'Kirito': 'Asuna'}, {'Lisabet': 'Kirito', 'Shirika': 'Kirito', 'Liifa': 'Kirito', 'Shinon': 'Kirito'}]
+[{'a': 1, 'b': 2, 'c': 3}, {1: 'a', 2: 'b', 3: 'c'}]
+[{'Naruto': 'Hinata', 'Sasuke': 'Sakura', 'Shikamaru': 'Temari', 'Sai': 'Ino', 'Choji': 'Karui'}, {'Hinata': 'Naruto', 'Sakura': 'Sasuke', 'Temari': 'Shikamaru', 'Ino': 'Sai', 'Karui': 'Choji'}]
+[{'Hikaru': 'Manaka', 'Kaname': 'Chisaki'}, {'Manaka': 'Tsumugu', 'Chisaki': 'Hikaru', 'Miu': 'Hikaru', 'Sayu': 'Kaname'}]
+[{'Mugi': 'Minagawa', 'Kanai': 'Minagawa'}, {'Hanabi': 'Kanai', 'Minagawa': 'Kanai', 'Sanae': 'Hanabi', 'Moka': 'Mugi'}]
