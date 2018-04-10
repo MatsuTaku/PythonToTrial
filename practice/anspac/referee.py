@@ -4,7 +4,7 @@
 
 class Referee:
     def __init__(self, filename):
-        with open(filename, 'r') as f:
+        with open(filename, 'r', encoding='utf-8') as f:
             list = [x.strip().split('-> ') for x in f.readlines()]
             self.table = dict(list)
 

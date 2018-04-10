@@ -19,7 +19,12 @@ def newSortString(str):
         new += str[i * 3 % l]
     return new
 
+
+
+
+# 並び替え前文字列の生成
 def reverse(text):
+    # 3で割り切れないように調整
     if len(text) % 3 == 0:
         text += '_'
     l = len(text)
@@ -30,9 +35,6 @@ def reverse(text):
     return ''.join(new_list)
 
 if __name__ == '__main__':
-    print(reverse('The_Zen_of_Python,_by_Tim_Peters.'))
-    print(reverse('Beautiful_is_better_than_ugly.'))
-    print(reverse('Explicit_is_better_than_implicit.'))
-    print(reverse('Simple_is_better_than_complex.'))
-    print(reverse('Flat_is_better_than_dense.'))
-    print(reverse('Readability_counts.'))
+    rev = reverse('The_Zen_of_Python,_by_Tim_Peters.')
+    print(rev)
+    print(newSortString(rev))

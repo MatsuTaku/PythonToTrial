@@ -16,7 +16,7 @@ import prac8
 
 def practice(num):
     if num == 1:
-        return prac1.showLangName
+        return prac1.getLangName
     if num == 2:
         return prac2.joinStrings
     if num == 3:

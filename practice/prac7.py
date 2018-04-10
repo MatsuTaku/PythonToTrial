@@ -27,8 +27,9 @@
     返値: int
 '''
 def matchings(mdi, wdi):
-    mnames = mdi.keys()
     count = 0
+    # 全ての男性において，好みの女性が自分を好きかどうかが分かれば十分
+    mnames = mdi.keys()
     for mname in mnames:
         wname = mdi[mname]
         if mname == wdi.get(wname):

@@ -1,6 +1,6 @@
 '''
     マサオくんとカズヒロくんがじゃんけんをします．
-    じゃんけんのの手には，
+    じゃんけんの手には，
     ✊: 0, ✌(ﾁｮｷ): 1, ✋: 2
     の整数を割り当てます．
     じゃんけんの結果によって以下の数字を返す関数を定義して下さい．
@@ -18,17 +18,23 @@
     返値: int
 '''
 def rps(masao, kazuhiro):
+    # 勝敗表作って
     table = [
         [0, 1, -1],
         [-1, 0, 1],
         [1, -1, 0]
     ]
+    # 取り出す
     return table[masao][kazuhiro]
+
+
+
 
 def generate():
     import random
     for _ in range(15):
-        print([random.randint(0, 2) for _ in range(2)])
+        list = [random.randint(0, 2) for _ in range(2)]
+        print(list, rps(list[0], list[1]))
 
 if __name__ == '__main__':
     print(rps(2, 0))

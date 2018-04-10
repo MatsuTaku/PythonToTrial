@@ -15,10 +15,14 @@
 import math
 
 def isPrime(num):
-    if num <= 0:
+    # １以下を足切り
+    if num <= 1:
         return False
+    # ２以降の偶数を足切り
+    # 偶奇の足切りは単純に効率が良い
     if num > 2 and num % 2 == 0:
         return False
+    # 探索は，√num までで十分
     for i in range(3, int(math.sqrt(num)) + 1, 2):
         if num % i == 0:
             return False
@@ -26,12 +30,24 @@ def isPrime(num):
 
 def sortedPrimeNumbers(list):
     new = []
+    # 事前にソート
+    list.sort()
+    prev = 0
     for v in list:
-        if not isPrime(v) or v in new:
+        # 直前と同じものはスキップ
+        if v == prev:
+            continue
+        prev = v
+        # 素数判定
+        if not isPrime(v):
             continue
         new.append(v)
-    return sorted(new)
+    return new
 
+
+
+
+# フィボナッチ数列
 def phibo():
     l = [0, 1]
     for i in range(2, 30):
@@ -40,6 +56,7 @@ def phibo():
         i += 1
     print(l)
 
+# ランダム生成
 def rand(size):
     import random
     l = []

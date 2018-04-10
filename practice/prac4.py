@@ -9,6 +9,7 @@
     返値: bool
 '''
 def shorter11(str):
+    # 比較演算の結果はBool
     return len(str) < 11
 
 if __name__ == '__main__':
