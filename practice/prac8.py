@@ -17,16 +17,7 @@
     引数: int, int
     返値: int
 '''
-# 勝敗表作って
-table = [
-    [0, 1, -1],
-    [-1, 0, 1],
-    [1, -1, 0]
-]
-
 def rps(masao, kazuhiro):
-    # 取り出す
-    return table[masao][kazuhiro]
 
 
 

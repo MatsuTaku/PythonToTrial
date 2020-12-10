@@ -14,48 +14,7 @@
 '''
 import math
 
-'''
-    素数かどうかの真偽値を返す関数
-    is~ は，Bool値を返す関数でよく使う命名方法
-'''
-def isPrime(num):
-    '''
-        以下は効率のいいアルゴリズムの例
-        単純でも出力が正しければ no problem
-    '''
-    # １以下を足切り
-    if num <= 1:
-        return False
-    # ２以降の偶数を足切り
-    # 偶奇の足切りは単純に効率が良い
-    if num > 2 and num % 2 == 0:
-        return False
-    # 探索は，√num までで十分
-    for i in range(3, int(math.sqrt(num)) + 1, 2):
-        if num % i == 0:
-            return False
-    # 全てのフィルタリングを通過すれば，素数である
-    return True
-
 def sortedPrimeNumbers(list):
-    new = []
-    prev = 0 # 重複判定用．素数じゃない値で初期化
-    # ソートしてから探索
-    for v in sorted(list):
-        '''
-            途中でcontinueさせるのは，ネストを浅く保つテクニック
-        '''
-        # 直前と同じものはスキップ
-        if v == prev:
-            continue
-        prev = v
-        # 素数判定
-        if not isPrime(v):
-            continue
-        # 追加
-        new.append(v)
-    return new
-
 
 
 # for DEBUG: - 

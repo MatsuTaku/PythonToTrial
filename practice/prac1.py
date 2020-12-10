@@ -6,4 +6,3 @@
     返り値: str
 '''
 def getLangName():
-    return 'Python3'

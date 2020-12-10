@@ -7,18 +7,6 @@
     返値: str
 '''
 def joinStrings(list):
-    '''
-        str.join(list)
-        引数のリストを，自身の文字列で連結した文字列を返す，str型の標準関数
-    '''
-    return ' '.join(list)
-
-# ループでやるとこんな感じ
-def joinStrings2(list):
-    joined = ''
-    for str in list:
-        joined += str + ' '
-    return joined[:-1]
 
 # for DEBUG: - 
 

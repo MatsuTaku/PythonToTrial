@@ -16,27 +16,7 @@
     引数: [int, ...]
     返値: {str: int, str: float, str: float}
 '''
-# リストの中央値出す関数
-def median(list):
-    sl = sorted(list)
-    l = len(sl)
-    if l % 2 == 0:
-        return (sl[l // 2] + sl[l // 2 - 1]) / 2
-    else:
-        return float(sl[l // 2])
-
 def getStatistics(list):
-    stat = {}
-    '''
-        sum(list)
-        リストの内部数値の合計値を出す標準関数
-        len(list)
-        リスト長を出す標準関数
-    '''
-    stat['sum'] = sum(list)
-    stat['average'] = stat['sum'] / len(list)
-    stat['median'] = median(list)
-    return stat
 
 # for DEBUG: - 
 
