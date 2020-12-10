@@ -9,8 +9,17 @@
     返値: bool
 '''
 def shorter11(str):
+    '''
+        これを誘うひっかけ問題
+        if len(str) < 11:
+            return True
+        else:
+            return False
+    '''
     # 比較演算の結果はBool
     return len(str) < 11
+
+# for DEBUG: - 
 
 if __name__ == '__main__':
     print(shorter11('aaaaaaaaaa'))

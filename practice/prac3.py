@@ -16,11 +16,14 @@ def newSortString(str):
     new = ''
     l = len(str)
     for i in range(l):
+        # 文字列長で割った余りを添字にすれば，端数が折り返される
         new += str[i * 3 % l]
     return new
 
 
 
+
+# for DEBUG: -
 
 # 並び替え前文字列の生成
 def reverse(text):

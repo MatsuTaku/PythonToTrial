@@ -26,15 +26,20 @@
     引数: dict, dict
     返値: int
 '''
-def matchings(mdi, wdi):
+def matchings(mend, womend):
     count = 0
     # 全ての男性において，好みの女性が自分を好きかどうかが分かれば十分
-    mnames = mdi.keys()
-    for mname in mnames:
-        wname = mdi[mname]
-        if mname == wdi.get(wname):
+    for mname in mend.keys():
+        '''
+            dict.get(key)
+            存在するかわからないkeyで辞書からvalueを取り出す関数
+            なければ None
+        '''
+        if mname == womend.get(mend[mname]):
             count += 1
     return count
+
+# for DEBUG: - 
 
 if __name__ == '__main__':
     mdi = {'a': 1, 'b': 2, 'c': 3}
